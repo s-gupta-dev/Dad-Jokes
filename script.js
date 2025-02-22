@@ -19,6 +19,6 @@ generateJoke();
 // Listeners
 jokeBtn.addEventListener("click", () => {
   clickAudio.currentTime = 0;
-  clickAudio.onplay();
+  clickAudio.play();
   generateJoke();
 });
