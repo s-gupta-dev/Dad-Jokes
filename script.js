@@ -17,4 +17,8 @@ async function generateJoke() {
 generateJoke();
 
 // Listeners
-jokeBtn.addEventListener("click", generateJoke);
+jokeBtn.addEventListener("click", () => {
+  clickAudio.currentTime = 0;
+  clickAudio.onplay();
+  generateJoke();
+});
