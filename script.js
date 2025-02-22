@@ -1,5 +1,6 @@
 const jokeEl = document.getElementById("joke");
 const jokeBtn = document.getElementById("jokeBtn");
+const clickAudio = document.getElementById("click-sound");
 
 async function generateJoke() {
   const config = {
